@@ -24,25 +24,13 @@
   height: auto;
 }
 
-
-
 .button-group {
   position: absolute;
   top: 10px;
   left: 10px;
-
-}
-
-.name {
-position: absolute;
-  top: 100px;
-  left: 50px;
-
-
 }
 
 .btn {
-
   background-color: #555;
   color: white;
   font-size: 16px;
@@ -54,7 +42,6 @@ position: absolute;
 }
 
 .button-group .btn {
-
   margin-bottom: 10px;
   background-color: #0e0e0e;
   color: white;
@@ -71,25 +58,83 @@ position: absolute;
   color: black;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-font-size: 30px;
-font-family: georgia;
-  text-align: center;
+@media only screen and (max-width: 600px) {
+  .button-group {
+    position: absolute;
+    top: 13%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: left;
+    padding: -5px 5px;
+  }
+
+  .button-group .btn {
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding: 4px 10px ;
+    font-size: 15px;
+  }
 }
 
-.centered-2 {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-font-size: 25px;
-font-family: gabriola;
-text-align: center;
+@media only screen and (max-width: 400px) {
+  .button-group .btn {
+    font-size: 10px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: georgia;
+    text-align: center;
+  }
+
+  .centered-2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-family: gabriola;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .centered {
+      font-size: 20px;
+    }
+
+    .centered-2 {
+      top: 60%;
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .centered {
+      font-size: 18px;
+    }
+
+    .centered-2 {
+      top: 65%;
+      font-size: 16px;
+    }
+  }
+
+
 
 
 .card{
@@ -97,7 +142,6 @@ text-align: center;
   box-shadow: 5px 10px 8px 10px rgb(163, 173, 201);
 
 }
-
 
 
 body {
@@ -207,7 +251,7 @@ body {
 
   <div class="button-group">
     <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
-  <button  style="font-family: gabriola;" class="btn">Home</button>
+
   &nbsp;&nbsp;&nbsp;&nbsp;
   <button onclick="scrolling1();"  style="font-family: gabriola;" class="btn">About</button>
   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -275,54 +319,48 @@ body {
    <center><h3 style="font-family: Calibri Light;">Skills</h3></center>
    <br><br>
 
-   <div class="container-fluid">
+
+ <div class="container">
     <div class="row">
 
-      <div class="col-sm-6 offset-sm-1 px-4">
-        <div id="job-margin" class="card" style="width:25rem;">
+      <div class="col-sm">
+        <div  style="width:25rem;">
           <div class="card-body">
-            <h4 style="color:blue;" class="card-title"></h4><hr>
-            <div style="color:blue">
-              <p>Python</p>
-              <p>Django Framework</p>
-              <p>Api Development</p>
-              <p>MySql</p>
-              <p>Sqlite</p>
-              <p>Postgre SQL</p>
-            </div>
-            <p style="font-family:Calibri Light"></p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col px-4">
-        <div id="job-margin" class="card" style="width:25rem;">
+        <p><i class="bi bi-patch-check-fill"></i> Python</p>
+              <p><i class="bi bi-patch-check-fill"></i> Django Framework</p>
+              <p> <i class="bi bi-patch-check-fill"></i> Api Development</p>
+              <p> <i class="bi bi-patch-check-fill"></i> MySql</p>
+              <p> <i class="bi bi-patch-check-fill"></i> Sqlite</p>
+            <p> <i class="bi bi-patch-check-fill"></i> Postgre SQL</p>
+
+
+      </div></div></div>
+      <div class="col-sm">
+<div  style="width:25rem;">
           <div class="card-body">
-            <h4 style="color:blue;" class="card-title"></h4><hr>
-            <div style="color:blue">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>Bootstrap</p>
-              <p>Javascript</p>
-              <p>Photoshop</p>
-              <p>Github</p>
-            </div>
-            <p style="font-family:Calibri Light"></p>
-          </div>
-        </div>
-      </div>
+               <p> <i class="bi bi-patch-check-fill"></i> HTML</p>
+              <p> <i class="bi bi-patch-check-fill"></i> CSS</p>
+              <p> <i class="bi bi-patch-check-fill"></i> Bootstrap</p>
+              <p> <i class="bi bi-patch-check-fill"></i> Javascript</p>
+             <p> <i class="bi bi-patch-check-fill"></i> Photoshop</p>
+            <p> <i class="bi bi-patch-check-fill"></i> Github</p></div></div>
 
+      </div>
     </div>
   </div>
 
-            </div><br>
+
+
+
+  <br>
         <br><br><br><br>
 
        <center><h3 style="font-family: Calibri Light;">Projects</h3></center>
 <br>
 
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
 
    <div class="col-sm-4">
@@ -424,7 +462,7 @@ body {
 
 <br><br><br>
 
-<footer class="bg-dark text-light py-3">
+<footer  class="bg-dark text-light py-3">
   <div class="container">
     <div class="row">
       <div class="col-md-6">

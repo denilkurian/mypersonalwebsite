@@ -1,472 +1,999 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denil|Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="medias">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
-.containers {
-  position: relative;
-  width: 100%;
-  max-width: 2000px;
-}
-
-.containers img {
-  width: 100%;
-  height: auto;
-}
-
-.button-group {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.btn {
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 22px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.button-group .btn {
-  margin-bottom: 10px;
-  background-color: #0e0e0e;
-  color: white;
-  font-size: 16px;
-  padding: 9px 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.button-group .btn:hover {
-  background-color: white;
-  color: black;
-}
-
-@media only screen and (max-width: 600px) {
-  .button-group {
-    position: absolute;
-    top: 13%;
-    left: 0px;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: left;
-    padding: -5px 5px;
-  }
-
-  .button-group .btn {
-    margin-bottom: 5px;
-    margin-left: 0px;
-    padding: 4px 10px ;
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .button-group .btn {
-    font-size: 10px;
-  }
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 
-
-
-
-
-
-
-
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    font-family: georgia;
-    text-align: center;
-  }
-
-  .centered-2 {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    font-family: gabriola;
-    text-align: center;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .centered {
-      font-size: 20px;
+  <style>
+    .navbar-nav .nav-link {
+      margin-right: 30px; /* Adjust the margin as needed */
+      margin-left: 30px; /* Adjust the margin as needed */
     }
 
-    .centered-2 {
-      top: 60%;
-      font-size: 18px;
-    }
-  }
 
-  @media only screen and (max-width: 400px) {
-    .centered {
-      font-size: 18px;
+
+    .navbar-nav .nav-link {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: black;
     }
 
-    .centered-2 {
-      top: 65%;
-      font-size: 16px;
+   .nav-link:hover {
+    color: #F06000;
+
+   }
+
+
+.dark-mode .nav-link:hover {
+    color: #F06000;
+
+   }
+
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #F06000;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
     }
-  }
 
+    .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
 
-
-
-.card{
-
-  box-shadow: 5px 10px 8px 10px rgb(163, 173, 201);
-
-}
-
+    }
 
 body {
-
-  background-color: white;
-  color: black;
-
+  background-color:azure;
 }
 
-.dark-mode {
+ .dark-mode {
   background-color: black;
   color: white;
 }
 
+.dark-mode .nav-link {
+    color: white;
+  }
 
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 0px solid #f1f1f1;
-  perspective: 1000px;
+  .dark-mode .btn {
+    color: white;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .animated {
+    animation: fadeIn 2s ease-in;
+  }
+
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Adjust the value to control the distance between icons */
+  }
+
+ .icon {
+color: black;
+
+ }
+
+ .icon:hover {
+  animation: hover-transition 1.5s;
+ }
+
+ @keyframes hover-transition {
+    0% { color: black; }
+    100% { color: rgb(248, 9, 9); }
+  }
+
+  .dark-mode .icon {
+    color: white;
+  }
+
+  #about  {
+    color: #031fd161;
+
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+  .denil {
+  font-size: 3rem;
+  margin: 1rem auto;
+  color: #1607ed61;
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 2s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
 }
 
 
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-  border-radius: 10%;
-
-}
-
-.flip-box-back {
-  background-color: #f3f3f3;
-  color: rgb(11, 11, 11);
-  transform: rotateY(180deg);
-  border-radius: 10%;
-}
+.navbar {
+  /* Transparent background color */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+  }
 
 
-
-
-        </style>
+</style>
 
 </head>
-<body>
+<body onload="animateText()">
 
+<!--
+  Dark mode -->
 
   <script>
-  function myFunction() {
-     var element = document.body;
-     element.classList.toggle("dark-mode");
-  }
+    function toggleDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      // Save the dark mode preference in local storage
+      var darkModeEnabled = element.classList.contains("dark-mode");
+      localStorage.setItem("darkMode", darkModeEnabled);
+
+      // Toggle the dark mode icon
+      var icon = document.getElementById("darkModeIcon");
+      if (darkModeEnabled) {
+        icon.classList.remove("bi-moon-fill");
+        icon.classList.add("bi-brightness-high-fill");
+      } else {
+        icon.classList.remove("bi-brightness-high-fill");
+        icon.classList.add("bi-moon-fill");
+      }
+    }
+
+    // Apply dark mode on page load if the preference is saved
+    document.addEventListener("DOMContentLoaded", function() {
+      var darkModeEnabled = localStorage.getItem("darkMode");
+      if (darkModeEnabled === "true") {
+        var element = document.body;
+        element.classList.add("dark-mode");
+
+        // Change the icon to the sun if dark mode is enabled
+        var icon = document.getElementById("darkModeIcon");
+        icon.classList.remove("bi-moon-fill");
+        icon.classList.add("bi-brightness-high-fill");
+      }
+    });
   </script>
 
-
-<script type="text/javascript">
-  function scrolling1(){
- window.scrollTo(0,810);
-  }
-</script>
-<script type="text/javascript">
-  function scrolling2(){
- window.scrollTo(0,1500);
-  }
-</script>
-<script type="text/javascript">
-  function scrolling3(){
- window.scrollTo(0,3000);
+<script>
+  function animateText() {
+    var text = document.getElementById("animatedText");
+    text.style.animationPlayState = "running";
   }
 </script>
 
 
+<!-- scroll to top -->
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
 
 
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top p-4">
+    <div class="container">
 
-
-<div class="containers">
-  <img src="https://cdn.wallpapersafari.com/45/6/SlQUOI.jpg" style="width:100%">
-
-  <div class="centered">Denil Kurian
-  </div>
-
-  <div class="centered-2">Engineer|Python Developer<i class="bi bi-laptop-fill"></i>
-</div>
-
-
-  <div class="button-group">
-    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
-
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <button onclick="scrolling1();"  style="font-family: gabriola;" class="btn">About</button>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <button onclick="scrolling2();"  style="font-family: gabriola;" class="btn">Activities</button>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <button onclick="scrolling3();"  style="font-family: gabriola;" class="btn">Contact</button></div>
-</div>
-
-<center> <i title="Dark-Mode" style="font-size: 25px;" onclick="myFunction()" class="bi bi-brightness-high-fill"></i></center>
-
-
-<br><br><br>
-
-<center><h3 style="font-family: Calibri Light;">About Me</h3></center>
-<br>
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col"></div>
-      <div class="col-sm-3">
-        <img src="photo_2021-09-15_22-56-06.jpg" style="border-radius: 10%;" class="img-fluid">
+      <div class="d-flex ">
+        <i onclick="scrollToTop()"  class="bi bi-house-door-fill"></i>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-5">
-        <p>Hi All👋 ,I am Denil Kurian,
-            Currently a python django student at Luminar Technolab Kochi.
-            I graduated B.Tech in Mechanical Engineering from College of Engineering Muttathara Trivandrum.Watching movies,playing football are my hobbies.
-            I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer
-            .I love coding. I've taken a big interest in web development recently.I already created some projects in django like ecommerce web app, Student Job portal,Todo application etc.I have already experienced with awesome coding languages
-            like Python,Javascript and markup language HTML etc. I like to study more coding language in future.</p>
-      </div>
-      <div class="col-sm">
+
+      <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
 
 
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul  class="navbar-nav ">
+          <li class="nav-item">
+            <a  class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+
+      <div class="d-flex ">
+      <i onclick="toggleDarkMode()"  id="darkModeIcon" class="bi bi-moon-fill"></i>
     </div>
-  </div>
 
-  <br><br></br><br><br></br>
-
-<center><h3 style="font-family: Calibri Light;">Experience</h3></center>
-<br><br>
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-sm">
-        <div  style="width:25rem;">
-          <div class="card-body">
-            <h5 style="color:blue;" class="card-title">Python-django Internship</h5><hr>
-        <p><i class="bi bi-pin-angle-fill"></i>  Website creation</p>
-        <p> <i class="bi bi-pin-angle-fill"></i> Build Real-time web applications</p>
-       <p><i class="bi bi-pin-angle-fill"></i> Api Development</p>
-
-      </div></div></div>
-      <div class="col-sm">
-        <img src="data:image/jpeg;base64,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" class="img-fluid" style="border-radius: 50%;">
-      </div>
     </div>
-  </div>
+  </nav>
 
 
 
+<br><br><br><br><br><br><br>
 
-<br><br><br><br></br>
-   <center><h3 style="font-family: Calibri Light;">Skills</h3></center>
-   <br><br>
+<center>
+  <h1 class="denil" style="font-family: Arial; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);" id="animatedText">Denil Kurian</h1>
+  <p class="animated" >Engineer|Web Developer <i class="bi bi-laptop-fill"></i></p>
+</center>
 
+<center>
 
- <div class="container">
-    <div class="row">
-
-      <div class="col-sm">
-        <div  style="width:25rem;">
-          <div class="card-body">
-
-        <p><i class="bi bi-patch-check-fill"></i> Python</p>
-              <p><i class="bi bi-patch-check-fill"></i> Django Framework</p>
-              <p> <i class="bi bi-patch-check-fill"></i> Api Development</p>
-              <p> <i class="bi bi-patch-check-fill"></i> MySql</p>
-              <p> <i class="bi bi-patch-check-fill"></i> Sqlite</p>
-            <p> <i class="bi bi-patch-check-fill"></i> Postgre SQL</p>
-
-
-      </div></div></div>
-      <div class="col-sm">
-<div  style="width:25rem;">
-          <div class="card-body">
-               <p> <i class="bi bi-patch-check-fill"></i> HTML</p>
-              <p> <i class="bi bi-patch-check-fill"></i> CSS</p>
-              <p> <i class="bi bi-patch-check-fill"></i> Bootstrap</p>
-              <p> <i class="bi bi-patch-check-fill"></i> Javascript</p>
-             <p> <i class="bi bi-patch-check-fill"></i> Photoshop</p>
-            <p> <i class="bi bi-patch-check-fill"></i> Github</p></div></div>
-
-      </div>
+  <div  class="icon-container">
+    <a class="icon" href="https://github.com/denilkurian/"><i style="font-size: 25px;" class="bi bi-github"></i> </a>
+      <a class="icon" href="https://www.linkedin.com/in/denil-kurian/"><i  style="font-size: 25px; " class="bi bi-linkedin"></i></a>
+      <a class="icon" href="https://www.instagram.com/____denil__/"><i  style="font-size: 25px;" class="bi bi-instagram"></i></a>
     </div>
-  </div>
+
+</center>
 
 
+<style>
+  .wrapper {
+    overflow: hidden;
+  }
 
+  .wrapper .img-fluid {
+    transition: scale 400ms;
+    cursor: pointer;
+
+  }
+
+  .wrapper:hover .img-fluid {
+    scale: 120%;
+  }
+
+</style>
+
+
+<center><i id="about" style="font-size: 0px;" class="bi bi-dot"></i></center>
+<br><br><br><br><br><br>
+<center><h4 style="font-family:'Tahoma';color: #F06000;font-weight: lighter;"><b>About</h4></center>
 
   <br>
-        <br><br><br><br>
-
-       <center><h3 style="font-family: Calibri Light;">Projects</h3></center>
-<br>
 
 
 <div class="container-fluid">
   <div class="row">
 
-   <div class="col-sm-4">
+      <div class="col">
 
-
-    <div style="width:8rem;">
-      <div class="card-body">
-        <h6 style="color:blue;" class="card-title">Job Portal</h6>
-        <hr>
-
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
-              <img class="card-img-top" src="https://ak1.picdn.net/shutterstock/videos/15143701/thumb/9.jpg" style="border-radius:10%">
-            </div>
-            <div class="flip-box-back">
-             <hr>
-              <h5 style="font-family: gabriola;color:red">An online job portal created using python django and frontend HTML CSS JavaScript and Bootstrap.><br>
-                 <a href="http://denil12345.pythonanywhere.com/"><button title="Watch Live" class="btn btn-primary">Live Demo</button></a>
-            </div>
-          </div>
-        </div>
       </div>
+
+    <div class="col wrapper">
+      <img src="denilkurian.jpg" style="border-radius: 5%;" class="img-fluid">
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-5">
+      <h4 >Let Me Introduce Myself</h4>
+      <h6>
+
+        Hi All 👋<br>
+
+        <h6 style="font-family: cursive, Trebuchet MS, 'Tahoma';color: #6d6e70;font-size: 15px;">I am Denil Kurian, Python Django intern at Luminar Technolab,Kochi. I am a graduated B.Tech Mechanical Engineer from College of Engineering Muttathara, Trivandrum.<br>
+        <br>
+
+        <b  >Hobbies and Interests <i style="font-size: 20px;" class="bi bi-headset"></i></b> <br>
+        <br>
+         In my free time, I enjoy watching movies and playing football. I am also passionate about traveling. I believe that traveling opens up new perspectives and allows you to explore different cultures, cuisines, history, languages, and unique aspects of each place.
+        <br><br>
+        <b  >Love for Coding and Web Development <i style="font-size: 20px;"  class="bi bi-browser-chrome"></i></b><br>
+        <br>
+        Coding is one of my great passions. I have developed a keen interest in web development, particularly in Django. I have already created various projects using Django, such as realtime chat application, a student job portal, and an ecommerce website model. Additionally, I have experience with programming languages like Python, JavaScript.
+
+        I am constantly eager to expand my knowledge and learn more coding languages in the future.</h6>
+    </div>
+    <div class="col-sm">
+
     </div>
   </div>
-
-  <div class="col-sm-4">
-    <div style="width:12rem;">
-      <div class="card-body">
-        <h6 style="color:blue;" class="card-title">Ecom Bookstore</h6>
-        <hr>
-
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
-              <img class="card-img-top" src="https://img.freepik.com/premium-vector/bookstore-with-visor-entrance-books-shop-window-shelves-street-shop-illustration-flat-style_193165-22.jpg" style="border-radius: 10%;">
-            </div>
-            <div class="flip-box-back">
-             <br>
-              <h5 style="font-family: gabriola;color:red">Online Bookstore developed using python django and frontend HTML CSS JavaScript and Bootstrap<br>
-                Features : User Authentication,
-                Add to cart, Add to saved lists ,
-                <br>
-                <a href="https://github.com/denilkurian/Ecommerece.project">Git link</a>
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div style="width:15rem;">
-      <div class="card-body">
-        <h6 style="color:blue;" class="card-title">Simple Todo</h6>
-        <hr>
-
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
-              <img class="card-img-top" src="https://static01.nyt.com/images/2020/05/21/reader-center/21burst-to-do-list/21burst-to-do-list-videoSixteenByNine480-v2.jpg"  style="border-radius: 10%;">
-            </div>
-            <div class="flip-box-back">
-              <br><br>
-              <h5 style="font-family: gabriola;color:red">A Todo application with Crud operation,Built using Python - django and frontend Html,css and Bootstrap</h5>
-
-              <a href="https://github.com/denilkurian/Mytodoapplication">Git link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
-</div><br>
 
-<br><br><br><br>
-<center><h3 style="font-family: Calibri Light;">Contact</h3></center>
+
+<center><i id="experience" style="font-size: 0px;" class="bi bi-dot"></i></center>
+<br><br><br><br><br><br>
+<center><h4 style="font-family: Lato,sans-serif;color: #F06000;font-weight: lighter"><b>Education & Experience  </h4></center><br>
+
+
+  <div class="container" >
+  <div class="row">
+
+    <div class="col">
+<h5>Python Developer intern</h5>
+  <h6 style="color:#6d6e70;">October 2022- May 2023</h6>
+    </div>
+    <div class="col-sm-3" >
+
+    </div>
+
+    <div class="col ">
+  <h3><i class="bi bi-briefcase-fill"></i></h3>
+    </div>
+
+    <div class="col">
+      <h5>Luminar Technolab <a title="Go to website" style="color: rgb(8, 8, 223);" href="https://www.luminartechnolab.com/"><i class="bi bi-link-45deg"></i></a></h5>
+
+        <h6>
+          <i class="bi bi-patch-check"></i> Website Creation &nbsp;
+          <i class="bi bi-three-dots"  data-bs-toggle="collapse" data-bs-target="#navbarNavs1"
+            aria-controls="navbarNavs1" aria-expanded="false" aria-label="Toggle navigation">
+            </i>
+        </h6>
+
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavs1">
+          <h6 style="color: #6d6e70;font-size: 13px;">
+            Creating Dynamic And Static Websites using Html, Css, and Javascript. Responsive Website using Bootstrap Framework and Tailwind CSS.
+          </h6>
+        </div>
+        <br>
+
+        <h6>
+          <i class="bi bi-patch-check"></i> API Development &nbsp;
+          <i class="bi bi-three-dots"  data-bs-toggle="collapse" data-bs-target="#navbarNavs2"
+            aria-controls="navbarNavs2" aria-expanded="false" aria-label="Toggle navigation">
+           </i>
+        </h6>
+
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavs2">
+          <h6 style="color: #6d6e70;font-size: 13px;">
+            Building and creating APIs to enable integration between systems, promote code modularity and reusability, and facilitate data access and sharing.
+          </h6>
+        </div><br>
+
+
+        <h6>
+          <i class="bi bi-patch-check"></i> Realtime Web App
+           <i class="bi bi-three-dots" data-bs-toggle="collapse" data-bs-target="#navbarNavs3"
+          aria-controls="navbarNavs3" aria-expanded="false" aria-label="Toggle navigation">
+          </i>
+        </h6>
+
+
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavs3">
+          <h6 style="color: #6d6e70;font-size: 13px;">
+           Building of realtime web application used to send and recieve asynchronous messages
+          </h6>
+        </div>
+
+    </div>
+  </div>
+</div>
+
 <br>
-<center>
+
 <div class="container">
-<div class="row">
+  <div class="row">
+    <div class="col">
+      <h5> Bachelor of Technology(KTU)</h5>
+      <h6 style="color:#6d6e70;">August 2018- May 2022</h6> </div>
+
+      <div class="col-sm-3" >
+
+      </div>
+
+      <div class="col" >
+        <h3><i class="bi bi-mortarboard-fill"></i></h3>
+      </div>
+
+<div class="col">
+<h5>College of Engineering Muttathara</h5>
+<h6 style="color:#6d6e70;">Mechanical Engineering</h6>
+</div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+<h5>Higher Secondary Education</h5>
+<h6 style="color:#6d6e70;"> 2016-2018</h6>
+    </div>
+
+
+    <div class="col-sm-3" >
+
+    </div>
+
+    <div class="col" >
+      <h3><i class="bi bi-book-fill"></i></h3>
+    </div>
+
+
+    <div class="col">
+<h5>St Anne's H.SS Kurianad</h5>
+<h6 style="color:#6d6e70;"> Bio Math</h6>
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+<center>
+ <a href="Resume-denilkurian.pdf">
+  <div class="button" data-tooltip="Size: 80kb">
+    <div class="button-wrapper">
+      <div style="font-family:  Lato,sans-serif;" class="text">Resume</div>
+        <span class="icons">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+        </span>
+      </div>
+    </div>
+  </a>
+</center>
+
+<style>
+.button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #1163ff;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icons {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icons {
+  transition: top 0.5s;
+}
+
+.icons {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #6c18ff;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icons {
+  top: 0;
+}
+
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+</style>
+
+
+<center><i id="skills" style="font-size: 0px;" class="bi bi-dot"></i></center>
+<br><br><br><br><br><br>
+<center><h4 style="font-family: Lato,sans-serif;color: #F06000;font-weight: lighter"><b>Skills</h4></center><br>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col">
+  <button class="btn-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png">
+  </button>
+  <h6>HTML</h6>
+  <br>
+
+  <button class="btn-image">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/free-css3-9-1175237.png">
+  </button>
+  <h6> &nbsp;&nbsp;CSS</h6>
+  <br>
+
+  <button class="btn-image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png">
+  </button>
+  <h6>BOOTSTRAP</h6>
+  </div>
+
   <div class="col">
 
 
+  <button class="btn-image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+  </button>
+  <h6>PYTHON</h6>
+  <br>
 
-    <a href="https://www.instagram.com/____denil__/"><i style="font-size: 25px;color:red" class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/denil-kurian-7a992924a/"><i style="font-size: 25px;" class="bi bi-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/denilkurian"><i style="font-size: 25px;color: rgb(80, 73, 73)" class="bi bi-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="mailto:denilkurian@gmail.com"><i style="font-size: 25px;color: blue" class="bi bi-envelope-fill"></i></a>
+  <button class="btn-image">
+    <img src="https://cdn.iconscout.com/icon/free/png-128/free-django-1-282754.png?f=webp">
+  </button>
+  <h6>DJANGO</h6>
+  <br>
+
+
+  <button class="btn-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png">
+  </button>
+  <h6>MYSQL</h6>
   </div>
-</div></center>
+
+  <div class="col">
+    <button class="btn-image">
+      <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg">
+    </button>
+    <h6>JAVASCRIPT</h6>
+    <br>
+
+    <button class="btn-image">
+      <img src="https://icones.pro/wp-content/uploads/2021/06/symbole-github-violet.png">
+    </button>
+    <h6>GITHUB</h6>
+    <br>
+
+    <button class="btn-image">
+      <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png">
+    </button>
+    <h6>VS CODE</h6>
 
 
+  </div>
+
+
+  </div>
+  </div>
+
+  <style>
+    .btn-image {
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-image img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+
+<center><i id="projects" style="font-size: 0px;" class="bi bi-dot"></i></center>
+<br><br><br><br><br><br>
+<center><h4 style="font-family: Lato,sans-serif;color: #F06000;font-weight: lighter"><b>Projects</h4></center><br>
+
+
+<div class="container">
+<div class="row">
+
+
+  <div class="col">
+    <h6>Let's Chat - Chat App</h6>
+    <div class="image-container">
+<img class="image-projects" src="chatpro.gif" width="330rem" >
+<div class="image-overlay">
+  <div class="text">
+    <a href="http://denil456.pythonanywhere.com/"><button  class="btn btn-primary">Demo</button></a>&nbsp;
+    <a href="https://github.com/denilkurian/whatsapp_clone"><button  class="btn btn-dark">Code</button></a>
+  </div>
+</div>
+
+</div>
+  </div>
+
+<div class="col">
+  <h6>Nike Website(Demo)</h6>
+
+  <div class="image-container">
+  <img  class="image-projects" src="Nikepro.gif" width="330rem" >
+  <div class="image-overlay">
+    <div class="text">
+      <a href="http://denil2255.pythonanywhere.com/"><button  class="btn btn-primary">Demo</button></a>&nbsp;
+      <a href="https://github.com/denilkurian/nike_demo"><button  class="btn btn-dark">Code</button></a>
+    </div>
+  </div>
+
+</div>
 </div>
 
 
-<br><br><br>
+<div class="col">
+  <h6>CareerBuddy-Job portal</h6>
 
-<footer  class="bg-dark text-light py-3">
+  <div class="image-container">
+    <img class="image-projects" src="Jobpro.gif" width="330rem">
+    <div class="image-overlay">
+      <div class="text">
+        <a href="http://denil12345.pythonanywhere.com/"><button  class="btn btn-primary">Demo</button></a>&nbsp;
+        <a href="https://github.com/denilkurian/studentjobportal"><button  class="btn btn-dark">Code</button></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+<br><br><br><br>
+
+
+<style>
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .btn {
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+</style>
+
+
+
+<center><i id="contact" style="font-size: 0px;" class="bi bi-dot"></i></center>
+<br><br><br><br><br><br>
+<center><h4 style="font-family: Lato,sans-serif;color: #F06000;font-weight:lighter"><b>Contact</h4></center>
+
+<br>
+
+<div>
+<div id="content1" class="container-fluid">
+<div class="row">
+
+  <div class="col">
+
+  </div>
+
+  <div class="col">
+    <button class="btn-images">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c02eb525365495.563444b0aedee.gif">
+    </button>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-5">
+<h5>Email Me <i class="bi bi-envelope-paper"></i></h5>
+<a href="mailto:denilkuriancc@gmail.com"><h4 style="font-family: 'Gabriola', cursive;">denilkuriancc@gmail.com</h4></a>
+<a href="mailto:denilkurian@gmail.com"><h4 style="font-family: 'Gabriola', cursive;">denilkurian@gmail.com</h4></a>
+  </div>
+
+  <div class="col-sm">
+
+  </div>
+
+</div>
+</div>
+</div>
+
+
+
+<style>
+.btn-images {
+  border-radius: 50%;
+  border: none;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+</style>
+
+
+<center><button style="border-radius:50%;box-shadow: 4px 4px 8px 5px rgba(3, 159, 249, 0.2), 5px 6px 20px 10px rgba(3, 76, 247, 0.19);" class="btn btn-primary" onclick="replaceDiv()"><i class="bi bi-send-fill"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button style="border-radius: 50%;box-shadow: 4px 4px 8px 5px rgba(3, 159, 249, 0.2), 5px 6px 20px 10px rgba(3, 76, 247, 0.19);" class="btn btn-primary" onclick="replaceDivWithAddress()"><i class="bi bi-pin-map-fill"></i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button style="border-radius: 50%;box-shadow: 4px 4px 8px 5px rgba(3, 159, 249, 0.2), 5px 6px 20px 10px rgba(3, 76, 247, 0.19);" class="btn btn-primary" onclick="replaceDivWithPhone()"><i class="bi bi-telephone-fill"></i></button>
+</center>
+
+<br><br><br>
+<!--
+Here in this js code when we click on the buttons the div with id content1 changes entirely to content2 and content3 according to
+the associated functions enabled in the button  -->
+
+ <script>
+  var currentDiv = 'content1';
+
+function replaceDivWithAddress() {
+  if (currentDiv !== 'content2') {
+    var content = document.getElementById(currentDiv);
+    var newDiv = document.createElement('div');
+    newDiv.id = 'content2';
+    newDiv.className = 'container-fluid';
+    newDiv.innerHTML = `
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <button class="btn-images">
+            <img src="giphy.webp">
+          </button>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <h5>Address <i class="bi bi-geo-alt"></i></h5>
+          <h4 style="font-family: 'Gabriola', cursive;">Thekkemattappallil(H) Vakkad(PO)<br>Kuravilangad Kottayam<br>Pin : 686636</h4>
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    `;
+    content.parentNode.replaceChild(newDiv, content);
+    currentDiv = 'content2';
+  }
+}
+
+function replaceDivWithPhone() {
+  if (currentDiv !== 'content3') {
+    var content = document.getElementById(currentDiv);
+    var newDiv = document.createElement('div');
+    newDiv.id = 'content3';
+    newDiv.className = 'container-fluid';
+    newDiv.innerHTML = `
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <button class="btn-images">
+            <img src="https://media3.giphy.com/media/gF8jpE3k1AAfyZDoj5/giphy.gif?cid=6c09b952xls06ldmokzeuwumqzo0cjtjwzl2gn6yecz5chh7&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+          </button>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <h5>Whatsapp <i class="bi bi-whatsapp"></i></h5>
+          <h4 style="font-family: 'Gabriola', cursive;">+91 9207574484</h4>
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    `;
+    content.parentNode.replaceChild(newDiv, content);
+    currentDiv = 'content3';
+  }
+}
+
+function replaceDiv() {
+  if (currentDiv !== 'content1') {
+    var content = document.getElementById(currentDiv);
+    var newDiv = document.createElement('div');
+    newDiv.id = 'content1';
+    newDiv.className = 'container-fluid';
+    newDiv.innerHTML = `
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <button class="btn-images">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c02eb525365495.563444b0aedee.gif">
+          </button>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <h5>Email Me <i class="bi bi-envelope-paper"></i></h5>
+          <a href="mailto:denilkuriancc@gmail.com"><h4 style="font-family: 'Gabriola', cursive;">denilkuriancc@gmail.com</h4></a>
+          <a href="mailto:denilkurian@gmail.com"><h4 style="font-family: 'Gabriola', cursive;">denilkurian@gmail.com</h4></a>
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    `;
+    content.parentNode.replaceChild(newDiv, content);
+    currentDiv = 'content1';
+  }
+}
+ </script>
+
+
+
+<div style="background-color: transparent" id="myNav" class="container">
+  <div class="row">
+
+
+    <div class="col-2">
+<h6 style="color: #1163ff;font-size: small;">LIKE MY WEBSITE</h6>
+<div id="likeButton"><i title="Like" style="color: green;font-size:xx-large;cursor: pointer;" class="bi bi-hand-thumbs-up-fill"></i><h4 style="font-size: smaller;" id="likeCount"></h4></div>
+    </div>
+
+
+          <div class="col">
+            <button title="close" class="btn btn-danger"><i style="cursor: pointer;" onclick="closeNav()" class="bi bi-x-lg"></i></button>
+                </div>
+
+
+  </div>
+</div>
+
+
+<!--
+closing the review bar -->
+<script>
+  function closeNav() {
+    var navElement = document.getElementById('myNav');
+    navElement.parentNode.removeChild(navElement);
+  }
+</script>
+
+
+
+<!--
+Js for counting likes -->
+<script>
+  // Check if the like count is already stored in local storage
+  if (localStorage.getItem('likeCount')) {
+    document.getElementById('likeCount').textContent = localStorage.getItem('likeCount');
+  }
+
+  // Handle button click
+  document.getElementById('likeButton').addEventListener('click', function() {
+    // Retrieve the current count from local storage
+    let count = localStorage.getItem('likeCount') || 0;
+    count = parseInt(count);
+
+    // Increment the count
+    count++;
+
+    // Update the count in local storage
+    localStorage.setItem('likeCount', count);
+
+    // Update the like count on the frontend
+    document.getElementById('likeCount').textContent = count;
+  });
+</script>
+
+
+
+
+<footer class="bg-dark text-light py-3">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <p>@Denil Kurian , All rights reserved</p>
+        <h6 style="font-size: small;">@Denil Kurian , All rights reserved</h6>
       </div>
       <div class="col-md-6 text-md-end">
         <a href="#" class="text-light me-3">Privacy Policy</a>&nbsp;&nbsp;
@@ -478,3 +1005,12 @@ body {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+

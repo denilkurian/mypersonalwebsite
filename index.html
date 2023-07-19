@@ -68,11 +68,13 @@
 
 body {
   background-color:azure;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
  .dark-mode {
   background-color: black;
   color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .dark-mode .nav-link {
@@ -318,7 +320,28 @@ body {
     scale: 120%;
   }
 
+
+     .wrapper {
+      animation: slideInFromLeft 1s ease;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+
 </style>
+
+
+<script>
+
+</script>
 
 
 <center><i id="about" style="font-size: 0px;" class="bi bi-dot"></i></center>
@@ -338,13 +361,12 @@ body {
     <div class="col wrapper">
       <img src="denilkurian.jpg" style="border-radius: 5%;" class="img-fluid">
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-5">
+
+    <div class="col-sm-12 col-md-6 col-lg-5 fade-in">
       <h4 style="font-family:font-family:'Tahoma';font-weight:lighter;">Let Me Introduce Myself</h4>
       <h6>
 
-
-
-        <h6 class="display-1" style="color: #6d6e70;font-size: 15px;"> Hi All 👋<br>
+        <h6 class="display-1" style="font-size: 15px;"> Hi All 👋<br>
           I am Denil Kurian, Python Django intern at Luminar Technolab,Kochi. I am a graduated B.Tech Mechanical Engineer from College of Engineering Muttathara, Trivandrum.<br>
         <br>
 
@@ -358,6 +380,7 @@ body {
 
         I am constantly eager to expand my knowledge and learn more coding languages in the future.</h6>
     </div>
+
     <div class="col-sm">
 
     </div>
@@ -993,7 +1016,7 @@ function replaceDivWithPhone() {
         <div class="col"></div>
         <div class="col">
           <button class="btn-images">
-            <img src="https://media3.giphy.com/media/gF8jpE3k1AAfyZDoj5/giphy.gif?cid=6c09b952xls06ldmokzeuwumqzo0cjtjwzl2gn6yecz5chh7&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+            <img src="https://media4.giphy.com/media/bVHssJ4b7xNPARHzVt/giphy.gif?cid=6c09b952cum06k975p0xtem76chtot67gov2x0lajsca0prv&ep=v1_stickers_related&rid=giphy.gif&ct=s">
           </button>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-5">

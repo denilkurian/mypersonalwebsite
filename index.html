@@ -92,30 +92,6 @@ body {
   }
 
 
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px; /* Adjust the value to control the distance between icons */
-  }
-
- .icon {
-color: black;
-
- }
-
- .icon:hover {
-  animation: hover-transition 1.5s;
- }
-
- @keyframes hover-transition {
-    0% { color: black; }
-    100% { color: rgb(248, 9, 9); }
-  }
-
-  .dark-mode .icon {
-    color: white;
-  }
-
   #about  {
     color: #031fd161;
 
@@ -270,6 +246,61 @@ color: black;
     </div>
 
 </center>
+
+
+<!--fade in up animation and hover color-->
+<style>
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Adjust the value to control the distance between icons */
+}
+
+.icon {
+  color: black;
+  opacity: 1;
+}
+
+.icon-container .icon:hover {
+  color: rgb(248, 9, 9);
+  transition: color 0.5s; /* Add a transition property for smooth color change */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  animation: fadeInUp .9s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+.icon:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.icon:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.icon:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.dark-mode .icon {
+  color: white;
+}
+
+
+</style>
 
 
 <style>
@@ -583,15 +614,15 @@ color: black;
 
 </style>
 
-
-<center><i id="skills" style="font-size: 0px;" class="bi bi-dot"></i></center>
+ <div id="skills" class="skills-section">
+<center><i style="font-size: 0px;" class="bi bi-dot"></i></center>
 <br><br><br><br><br><br>
 <center><h4 style="font-family:'Tahoma';color: #F06000;font-weight: lighter;">Skills</h4></center><br>
 
   <div class="container">
     <div class="row">
 
-      <div class="col">
+      <div class="col fade-in">
   <button class="btn-image">
     <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png">
   </button>
@@ -610,7 +641,7 @@ color: black;
   <h6>BOOTSTRAP</h6>
   </div>
 
-  <div class="col">
+  <div class="col fade-in">
 
 
   <button class="btn-image">
@@ -632,7 +663,7 @@ color: black;
   <h6>MYSQL</h6>
   </div>
 
-  <div class="col">
+  <div class="col fade-in">
     <button class="btn-image">
       <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg">
     </button>
@@ -650,12 +681,87 @@ color: black;
     </button>
     <h6>VS CODE</h6>
 
-
   </div>
 
+  </div>
+  </div></div>
 
-  </div>
-  </div>
+<script>
+
+function handleFadeInAnimation() {
+  var skillsSection = document.getElementById('skills');
+  var skillsSectionTop = skillsSection.offsetTop;
+  var skillsSectionHeight = skillsSection.offsetHeight;
+  var windowHeight = window.innerHeight;
+  var scrollPosition = window.scrollY;
+
+  if (
+    scrollPosition >= skillsSectionTop - windowHeight + skillsSectionHeight &&
+    scrollPosition <= skillsSectionTop + skillsSectionHeight
+  ) {
+    skillsSection.classList.add('fade-in-active');
+  } else {
+    skillsSection.classList.remove('fade-in-active');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  handleFadeInAnimation();
+});
+
+window.addEventListener('scroll', function() {
+  handleFadeInAnimation();
+});
+
+
+</script>
+
+
+<style>
+.skills-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.skills-section.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.fade-in {
+  animation: fadeInUp 1s ease-in ;
+  animation-fill-mode: both;
+  opacity: 1;
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+
+
 
   <style>
     .btn-image {

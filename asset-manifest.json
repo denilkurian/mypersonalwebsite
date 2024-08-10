@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.457b5bf6.css",
+    "main.js": "/static/js/main.d752a143.js",
+    "static/js/453.83234151.chunk.js": "/static/js/453.83234151.chunk.js",
+    "static/media/recruitment.png": "/static/media/recruitment.c3de6ce9a6bf5454b8d2.png",
+    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Gilroy-Light.ttf": "/static/media/Gilroy-Light.896263ef5d2514291c78.ttf",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.23dfbc19380d778f2742.ttf",
+    "static/media/creations.jpg": "/static/media/creations.01186b9a8dc1901b56c2.jpg",
+    "static/media/bio.jpg": "/static/media/bio.f0df6126affb5c4dbb96.jpg",
+    "static/media/Denil Kurian Resume.pdf": "/static/media/Denil Kurian Resume.2fa74cf6f2dd94679bf3.pdf",
+    "static/media/Spartan-Light.ttf": "/static/media/Spartan-Light.3fb0b2d6ddc9672430f7.ttf",
+    "static/media/codeimage.png": "/static/media/codeimage.f13ecd1fa18c47aacb67.png",
+    "static/media/denil portfolio image.jpg": "/static/media/denil portfolio image.7741626436f870b5ba3d.jpg",
+    "static/media/ktu.png": "/static/media/ktu.5cfc47e075b21f4decac.png",
+    "static/media/about-image.png": "/static/media/about-image.ad963736249a7b75c7c2.png",
+    "static/media/logo-instagram-png-13570.png": "/static/media/logo-instagram-png-13570.42c20aec6fa7337c01ce.png",
+    "static/media/job.jpg": "/static/media/job.cd222f33a09678a0c26e.jpg",
+    "static/media/github.webp": "/static/media/github.2efeba1c00ab1e35b913.webp",
+    "static/media/chat.avif": "/static/media/chat.bacf9fea4da792b6c683.avif",
+    "static/media/luminar.jpg": "/static/media/luminar.9ab4a2f65aee45bece09.jpg",
+    "static/media/datapmi.jpeg": "/static/media/datapmi.f6e135a195ef3696f951.jpeg",
+    "static/media/linkedin.webp": "/static/media/linkedin.c28baf64c80dc77777ac.webp",
+    "index.html": "/index.html",
+    "main.457b5bf6.css.map": "/static/css/main.457b5bf6.css.map",
+    "main.d752a143.js.map": "/static/js/main.d752a143.js.map",
+    "453.83234151.chunk.js.map": "/static/js/453.83234151.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.457b5bf6.css",
+    "static/js/main.d752a143.js"
+  ]
+}
